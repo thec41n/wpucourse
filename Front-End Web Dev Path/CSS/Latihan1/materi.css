@@ -6,4 +6,25 @@ h1 {
     color: blue;
     font-family:arial;
 }
+
+Menempatkan CSS
+Embed
+<style></style>
+
+Inline
+<p style="color: blue;"></p>
+
+External
+<link rel="stylesheet" href="style.css">
 */
+
+h1 {
+    color: darkred;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: crimson;
+    text-align: justify;
+}
