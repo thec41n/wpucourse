@@ -4,56 +4,79 @@
     <title>HTML Form</title>
 </head>
 <body>
-    <label for="username">Username :</label>
-    <input type="text" id="username">
-    <br>
-    <label for="password">Password :</label>
-    <input type="password" id="password">
-    <br>
-    <input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label>
-    <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label>
-    <br>
-    <input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
-    <input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
-    <input type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label>
-    <br>
-    <button type="submit">Kirim</button>
-    <br>
-    <br>
-    <table border="1" cellspacing="1" cellpadding="5">
-        <thead>
+    <form>
+        <label for="username">Username :</label>
+        <input type="text" id="username">
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" id="password">
+        <br>
+        <input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label>
+        <br>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
+        <input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
+        <input type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label>
+        <br>
+        <textarea></textarea>
+        <br>
+        <select>
+            <option>Bandung</option>
+            <option>Jakarta</option>
+            <option>Bogor</option>
+        </select>
+        <br>
+        <button type="submit">Kirim</button>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2" align="center">Data Kelas</td>
+                </tr>
+            </thead>
             <tr>
-                <td colspan="2" align="center">Data Kelas</td>
+                <td><label for="username">Nama</label></td>
+                <td>
+                    <input type="text" id="username">
+                </td>
             </tr>
-        </thead>
-        <tr>
-            <td><label for="username">Nama</label></td>
-            <td>
-                <input type="text" id="username">
-            </td>
-        </tr>
-        <tr>
-            <td><label for="kelas">Kelas</label></td>
-            <td><input type="kelas"></td>
-        </tr>
-        <tr>
-            <td><label for="npm">NPM</label></td>
-            <td><input type="text" name="" id=""></td>
-        </tr>
-        <tr>
-            <td><label for="jeniskelamin">Jenis Kelamin</label></td>
-            <td>
-                <input type="radio" id="laki-laki" name="jeniskelamin"><label for="laki-laki">Laki-Laki</label>
-                <input type="radio" id="perempuan" name="jeniskelamin"><label for="perempuan">Perempuan</label>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <button type="submit" style="margin-right: 5vh;">Kirim</button>
-                <button type="reset">Reset</button>
-            </td>
-            
-        </tr>
-    </table>
+            <tr>
+                <td><label for="kelas">Kelas</label></td>
+                <td><input type="kelas"></td>
+            </tr>
+            <tr>
+                <td><label for="npm">NPM</label></td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="jeniskelamin">Jenis Kelamin</label></td>
+                <td>
+                    <input type="radio" id="laki-laki" name="jeniskelamin"><label for="laki-laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jeniskelamin"><label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="matkul">Mata Kuliah Favorit</label></td>
+                <td align="center">
+                    <select>
+                        <option>Matematika</option>
+                        <option>Algoritma</option>
+                        <option>Bahasa Inggris</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="deskripsi">Deskripsi Diri</label></td>
+                <td><textarea placeholder="Deskripsi"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" style="margin-right: 5vh;">Kirim</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
