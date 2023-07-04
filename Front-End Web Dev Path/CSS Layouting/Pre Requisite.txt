@@ -1,0 +1,15 @@
+Pre Requisite CSS Layouting
+1. HTML Dasar
+2. CSS Dasar
+
+Syllabus
+1. Display
+2. Dimensi
+3. Overflow
+4. Box Model
+5. Float
+6. Position
+
+Tools/Software
+1. Code Editor
+2. Web Browser
