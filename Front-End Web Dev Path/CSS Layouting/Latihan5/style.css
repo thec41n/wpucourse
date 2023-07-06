@@ -1,0 +1,42 @@
+/* Padding tidak memiliki nilai negatif & auto spt margin*/
+/* Total dimensi = Width/Height + Padding + Border */
+/* border: width style color */
+/* div {
+    width: 145px;
+    height: 145px;
+    background-color: lightgreen;
+    margin: 20px auto;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-top: 10px;
+    padding: 50px;
+    border-width: 5px;
+    border-style: double;
+    border-color: black;
+    border-right-width: 5px;
+    border-right-style: double;
+    border-right-color: black;
+    border-left: 5px dashed green;
+} */
+
+div {
+    width: 600px;
+    margin: 15px auto;
+    box-sizing: border-box;
+}
+
+.satu {
+    /* 600 - 2*10 - 2*3 =  574px*/
+    /* width: 574px; */
+    background-color: lightgreen;
+    padding: 10px;
+    border: 3px solid red;
+}
+
+.dua {
+    /* 600 - 2*30 - 2*10 = 520px */
+    /* width: 520px; */
+    background-color: lightcoral;
+    padding: 30px;
+    border: 10px dashed green;
+}
