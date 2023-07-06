@@ -3,4 +3,9 @@ Tag <div> dan <span> tidak memiliki 'arti' apapun,
 keduanya digunakan untuk mengelompokkan tag-tag HTML dan 
 memberikan informasi terhadap tag-tag tersebut. 
 
+Setiap tag pada HTML berada di dalam sebuah kotak. Properti display pada CSS mengatur
+perilaku dari kotak tersebut.
+
+Setiap tag pada HTML memiliki nilai default untuk properti display. 
+Tetapi kita juga dapat mengubah perilaku dari tag tersebut dengan mengganti value-nya.
 */

@@ -4,15 +4,17 @@
 <head>
     <title>CSS Display</title>
     <style>
-        .navigasi {
-            background-color: red;
-        }
-        .main {
-            background-color: green;
+        .navigasi li {
+            display: inline;
         }
 
-        .main span {
-            background-color: yellow;
+        .main {
+            width: 600px;
+            background-color: lightcoral;
+        }
+
+        h1, h2, p {
+            background-color: lightgreen;
         }
     </style>
 </head>
@@ -24,10 +26,13 @@
 
     <div class="navigasi">
         <h2>Daftar Link</h2>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
     </div>
 
     <div class="main">
