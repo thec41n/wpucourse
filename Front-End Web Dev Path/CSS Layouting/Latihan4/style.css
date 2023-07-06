@@ -1,0 +1,42 @@
+/* Overlapping margin
+Margin vertikal akan mencari margin terbesar
+Margin horizontal akan menjumlahkan margin horizontal
+*/
+/* div {
+    display: inline-block;
+} */
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin: 30px 50px 40px 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px; */
+    /* margin-right: 30px; */
+    /* margin-bottom: 30px; */
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-top: 50px; */
+    /* margin-left: 20px; */
+    /* margin-top: -50px;
+    margin-left: -100px; */
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
