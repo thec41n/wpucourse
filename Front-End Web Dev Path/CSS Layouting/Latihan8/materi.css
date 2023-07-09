@@ -19,4 +19,9 @@ membuat serangkaian gambar menjadi galeri
 multi-column layout
 membuat halaman memiliki beberapa kolom
 dan masih banyak lagi
+
+Cara menghentikan/membersihkan float
+menggunakan property overflow
+menggunakan <div> kosong
+menggunakan teknik micro clearfix
 */
