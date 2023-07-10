@@ -1,0 +1,17 @@
+/* 
+Position
+static
+relative
+absolute
+fixed
+
+Static
+static adalah nilai default dari tiap-tiap elemen ketika tidak diberi properti position
+Menggunakan position selain static (non-static), akan membuat sebuah elemen menjadi seolah-olah berbeda dimensi dari elemen lainnya
+Elemen yang diberi position selain static dapat menggunakan properti top, left, bottom dan right untuk mengatur posisinya
+
+Relative
+Ketika kita menggerakkan elemen dengan posisi relative (menggunakan properti top, left, bottom dan right), ruang yang ditempati oleh elemen tersebut masih ada
+Ketika kita menggerakkan elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semula-nya
+Jika kita memberi properti top: 0; dan left: 0; maka elemen tidak berubah posisinya
+*/
