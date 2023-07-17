@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style */
+body {
+    font-size: 16px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    background-image: url(assets/paisley.png);
+    color: rgb(53, 53, 53);
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgba(135, 206, 250, 0.61);
+    border-bottom: 3px solid salmon;
+    z-index: 9999;
+}
+
+.container {
+    width: 960px;
+    margin: 80px auto;
+    background-color: white;
+    border: 2px solid rgb(53, 53, 53);
+    position: relative;
+}
+
+.instagram {
+    width: 187px;
+    height: 257px;
+    background-image: url(assets/instagram-ribbon-icon-1.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    right: 0px;
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(35, 174, 230);
+}
+
+.header a:hover {
+    color: salmon;
+}
+
+/* Hero */
+.hero {
+    height: 360px;
+    background-image: url(assets/hero-img.jpg);
+    background-size: cover;
+    background-position: 0 -110px;
+    border-top: 5px solid rgb(186, 186, 186);
+    border-bottom: 5px solid rgb(186, 186, 186);
+}
+
+/* Main */
+.main {
+    width: 600px;
+    padding: 20px;
+    text-align: justify;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main .paragraf {
+    text-indent: 15px;
+}
+
+.main .penulis {
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.main .penulis a {
+    text-decoration: none;
+    color: rgb(35, 174, 230);
+}
+
+.main .penulis a:hover {
+    color: salmon;
+}
+
+.main p {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+
+.sidebar img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding-right: 13px;
+}
+
+.sidebar p {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.sidebar h4 {
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.sidebar ul {
+    margin-top: 5px;
+}
+
+.sidebar ul li {
+    display: inline-block;
+    margin-left: 19px;
+}
+
+.sidebar ul li a {
+    color: rgb(35, 174, 230);
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: salmon;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(132, 132, 132);
+    padding: 10px;
+}
+
+.footer .copyright {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 13px;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
