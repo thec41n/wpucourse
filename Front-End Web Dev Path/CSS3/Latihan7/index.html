@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        /* Sintaks sederhana
+        background-image: radial-gradient(<warna awal>, <warna akhir>);
+        */
+        div {
+            width: 500px;
+            height: 200px;
+            margin: 50px auto;
+            /* background: radial-gradient(blue, aqua); */
+            /* Multiple Color */
+            /* background-image: radial-gradient(blue, aqua, red); */
+            /* Color Stop */
+            /* background-image: radial-gradient(red 10%, blue 20%, aqua 80%); */
+            /* Sintaks Lengkap 
+            background-image: radial-gradient(
+                <tipe> <jangkauan> at <posisi-y> <posisi-z>,
+                <warna-1>, <warna-2>, <warna-3>, ..., <warna-n>
+            );
+
+            TIPE
+            Ellipse
+            Circle
+
+            Jangkauan
+            closest-corner
+            closest-side
+            farthest-corner
+            farthest-side
+            */
+            /* background-image: radial-gradient(circle farthest-corner, red 10%, blue 20%, aqua 80%); */
+            /* 
+            POSISI
+            posisi-y: top, center, bottom(px)
+            posisi-x: left, center, right(px)
+            */
+            background-image: radial-gradient(circle farthest-side at top right, red, blue, aqua);
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
