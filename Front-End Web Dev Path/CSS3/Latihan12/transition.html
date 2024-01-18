@@ -26,6 +26,16 @@
             word-spacing
             letter-spacing
             */
+
+            /* 
+            Timing Function
+            ease
+            ease-in
+            ease-out
+            ease-in-out
+            linear
+            cubic-bezier(w,x,y,z)
+            */
         body{
             margin: 0;
             padding: 0;
@@ -35,7 +45,10 @@
             width: 100px;
             height: 100px;
             background-color: salmon;
-            transition: 1s;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px 0;
+            transition: margin-left 2s, transform 3s 2s, background-color 2s 3s;
         }
 
         .container {
@@ -43,6 +56,30 @@
             margin: 10px auto;
             border: 5px solid black;
         }
+
+        /* .kotak1 {
+            transition: all 3s ease
+        }
+
+        .kotak2 {
+            transition: all 3s ease-in
+        }
+        
+        .kotak3 {
+            transition: all 3s ease-out
+        }
+
+        .kotak4 {
+            transition: all 3s ease-in-out
+        }
+
+        .kotak5 {
+            transition: all 3s linear
+        }
+
+        .kotak6 {
+            transition: all 3s cubic-bezier(0.87, 0.04, 0.16, 1.04);
+        } */
 
         .container:hover .kotak{
             transform: rotate(720deg);
@@ -54,6 +91,11 @@
 <body>
     <div class="container">
         <div class="kotak"></div>
+        <!-- <div class="kotak kotak2">Ease-in</div>
+        <div class="kotak kotak3">Ease-in</div>
+        <div class="kotak kotak4">Ease-in</div>
+        <div class="kotak kotak5">Linear</div>
+        <div class="kotak kotak6">cubic-bezier</div> -->
     </div>
 </body>
 </html>
