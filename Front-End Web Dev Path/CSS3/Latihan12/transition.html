@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 1</title>
+    <style>
+            /* 
+            Property Transition
+            [property] <durasi> [fungsi] [delay];
+            Properti durasi: s/ms
+
+            Animatable Properties
+            background-color
+            background-position
+            background-size
+            border
+            color
+            filter
+            font-size
+            line-height
+            top left bottom right
+            margin padding
+            width height
+            opacity
+            transform
+            word-spacing
+            letter-spacing
+            */
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            transition: 1s;
+        }
+
+        .container {
+            width: 900px;
+            margin: 10px auto;
+            border: 5px solid black;
+        }
+
+        .container:hover .kotak{
+            transform: rotate(720deg);
+            margin-left: 800px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak"></div>
+    </div>
+</body>
+</html>
