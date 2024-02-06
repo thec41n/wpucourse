@@ -117,14 +117,17 @@ h1 {
 }
 
 .overlay:target img {
-    animation: zoomfade .3s;
-    -webkit-animation: zoomfade .3s;
+    animation: faded .3s;
+    -webkit-animation: faded .3s;
 }
 
 
 .overlay .close {
     position: absolute;
-    top: 70px;
+    top: 80px;
+    left: 50%;
+    margin-left: -15px;
+    line-height: 14px;
     color: white;
     text-decoration: none;
     opacity: 0;
@@ -135,7 +138,40 @@ h1 {
     -webkit-animation: slideDownFade .3s .3s forwards;
 }
 
+.overlay:target .next,
+.overlay:target .previous {
+    animation: faded .5s .5s forwards;
+    -webkit-animation: faded .5s .5s forwards;
+}
+
+/* Navigation */
+.next, .previous {
+    width: 57px;
+    height: 93px;
+    background-image: url(../img/right.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 40px;
+    opacity: 0;
+}
+
+.previous {
+    background-image: url(../img/left.png);
+    margin-left: -100px;
+}
+
 /* Animation */
+@keyframes faded {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
 @keyframes zoomfade {
     0% {
         transform: scale(0);
